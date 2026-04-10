@@ -1,0 +1,20 @@
+# Models to evaluate
+models:
+  - id: gpt-4o
+    provider: openai
+    api_model: gpt-4o
+  - id: gpt-4o-mini
+    provider: openai
+    api_model: gpt-4o-mini
+  - id: claude-sonnet-4
+    provider: anthropic
+    api_model: claude-sonnet-4-20250514
+  - id: claude-opus-4
+    provider: anthropic
+    api_model: claude-opus-4-20250514
+
+# Alert settings
+alerts:
+  webhook_url: null  # Set to Slack/Discord webhook for notifications
+  email: null
+  threshold_change: 1  # Alert when tier changes by N levels
