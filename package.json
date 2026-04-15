@@ -1,0 +1,31 @@
+{
+  "name": "@phoenixaihub/ai-security-capability-monitor",
+  "version": "1.0.0",
+  "description": "Track emerging AI offensive capabilities and defensive tools with risk scoring",
+  "main": "dist/index.js",
+  "bin": { "ai-cap": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "start": "node dist/cli.js"
+  },
+  "keywords": ["ai", "security", "capability", "monitor", "risk-scoring"],
+  "author": "phoenixaihub",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "rss-parser": "^3.13.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.0",
+    "typescript": "^5.4.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
